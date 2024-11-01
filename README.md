@@ -55,9 +55,18 @@ Eğer karakter bulunamazsa, her iki işlev de `NULL` döner.<br/><br/>
 Buradaki fonksiyonlar standart C kütüphanesinde bulunmayan fonksiyonlardır.
 
 `ft_substr()`fonksiyonu bir dize *string* alır , bir tam sayı *int* olarak başlangıç noktası ve uzunluk *len* alır. Belirtilen dizinden belirtilen uzunluğa kadar, dizenin içerikleri yeni tahsis edilmiş bir dizeye kopyalanır ve bu dize döndürülür. Dizenin start noktası dizenin uzunluğunu aşarsa `ft_strdup` sayesinde boş bir dize döndürülür (null döndürmekle aynı şey değildir!).<br/>
-<br/>
+<br/><br/>
 `ft_strjoin()`fonksiyonu iki dize *string* alır. Burada amacımız iki dizeyi yeni tahsis edilmiş dizeye birleştirmektir. Dizilerden biri boşsa, diğer dize döndürülür.<br/>
-<br/>
+<br/><br/>
 `ft_strtrim()`fonksiyonu iki dize *string* alır.İlk string kırpılacak ve ikinci string ise başından sonundan kırpılacak olan karakter dizisidir.Yeni oluşturulan karakter dizisine yeni tahsis edilmiş bir dize olarak döndürülür. Burada kırpmak istediğimiz karakterleri, kırpılacak olan dizenin içinde aramak için`ft_strchr()` fonksiyonunu kullanabiliriz.<br/>
-<br/>
-`ft_split()`fonksiyonu bir dize *string* ve bir karakter *char* alır.Fonksiyonun amacı, belirtilen karakteri ayırıcı olarak kullanıp dizeyi bölmek ve bu bölünen yeni dizeleri tutan yeni bir dize döndürmektir.Öncellikle olarak bir `count_words` fonksiyonu ile dizede kaç karakter olduğunu hesaplanır.`extract_word` ile kelimleri çıkartıp yeni tahsis edilmiş yere konulur.`ft_split()`ile `extract_word` ile çıkartılan kelimeleri yeniden tahsis edilmiş yere eklenir.
+<br/><br/>
+`ft_split()`fonksiyonu bir dize *string* ve bir karakter *char* alır.Fonksiyonun amacı, belirtilen karakteri ayırıcı olarak kullanıp dizeyi bölmek ve bu bölünen yeni dizeleri tutan yeni bir dize döndürmektir.Öncellikle olarak bir `count_words` fonksiyonu ile dizede kaç karakter olduğunu hesaplanır.`extract_word` ile kelimleri çıkartıp yeni tahsis edilmiş yere konulur.`ft_split()`ile `extract_word` ile çıkartılan kelimeleri yeniden tahsis edilmiş yere eklenir.<br/>
+<br/><br/>
+`ft_itoa()` fonksiyonu bir tam sayıyı alır ve onu yeni tahsis edilmiş bir dizeye dönüştürür. Dize için doğru miktarda alan tahsis edebilmemiz için basamak sayısını (negatif bir sayı durumunda eksi işareti dahil) sayan bir fonksiyon kullanırız.<br/>
+<br/><br/>
+`ft_strmapi()` ve `ft_striteri()` bir dize ve bir fonksiyona işaretçi alır. Hem ft_strmapi() hem de ft_striteri() geçirilen fonksiyonu geçirilen dizenin her karakterine ayrı ayrı uygular, ancak `ft_striteri()` dizeyi doğrudan değiştirirken `ft_strmapi()` sonuçla birlikte yeni tahsis edilmiş bir dize döndürür.<br/>
+<br/><br/>
+`ft_putchar_fd()` fonksiyonu karakter yazdırmaya; `ft_putstr_fd()` fonksiyonu *string* yazdırmaya ;`ft_putendl_fd()` fonksiyonu karakter ve yeni satur *newline* yazdırmaya;`ft_putnbr_fd()`fonksiyonu sayı yazdırır. Bir dosya tanımlayıcısı, sistemdeki bir dosyanın bellekteki adresini belirtir. <br/>
+`0 -> Standart Input.
+1 -> Standart Output.
+2 -> Standart Error.` <br/><br/>
