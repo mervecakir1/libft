@@ -6,8 +6,8 @@ Libft, yaygın kullanılan C kütüphane fonksiyonlarının öğrenilmesi ve yen
 ## 2.Kurulum
 Projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
-Proje dosyalarını klonlayın: `git clone`  <repo-url> <br/>
-Proje dizinine gidin: `cd libft` <br/>
+Proje dosyalarını klonlayın: `git clone` . <repo-url> <br/>
+Proje dizinine gidin: `cd libft`. <br/>
 `make` komutunu çalıştırarak projeyi derleyin.<br/>
 ## 3.Proje Yapısı
 **libft.h:** Tüm fonksiyon prototipleri ve gerekli tanımlamalar burada bulunur.<br/>
@@ -17,12 +17,12 @@ Proje dizinine gidin: `cd libft` <br/>
 ### 4.1 Libc Fonksiyonları
 `ft_isalpha()`, `ft_isdigit()`, `ft_isalnum()`, `ft_isascii()` ve `ft_isprint()` gönderilen karakterin alfabetik, sayısal, alfanümerik, ASCII değeri veya yazdırılabilir bir değer olup olmadığına bağlı olarak sırasıyla 0 veya 1 tamsayı döndürür. <br/>
 <br/><br/>
-`ft_toupper()` ve `ft_tolower()`bir `int`alır ve değerinin sırasıyla küçük harfli veya büyük harfli bir ASCII değerine eşit olup olmadığını kontrol eder ve ardından onu büyük harfli veya küçük harfli değerine dönüştürür<br/>
+`ft_toupper()` ve `ft_tolower()`bir `int`alır ve değerinin sırasıyla küçük harfli veya büyük harfli bir ASCII değerine eşit olup olmadığını kontrol eder ve ardından onu büyük harfli veya küçük harfli değerine dönüştürür.<br/>
 <br/>c
 `ft_strlen()` bir dizenin uzunluğunu sayan ve bu uzunluğu size_t olarak döndüren bir fonksiyondur. `size_t` ile ilk burada karşılaşırız maksimum değeri derlerleyiciye bağlıdır. 32-bit sistemlerde genellikle 4 bayt, 64-bit sistemlerde ise 8 bayttır.Genellikle bellek alanlarının veya dizilerin boyutunu temsil etmek amacıyla tercih edilir. size_t, işaretsiz bir tamsayı türüdür, yani negatif değer almaz; yalnızca sıfır ve pozitif değerler içerir. <br/>
 <br/><br/>
 `ft_memset()` ve `ft_bzero()` bir void işaretçisini kullanarak bellek bölgelerini belirli bir değerle doldurur.`void` işaretçileri, herhangi bir türden veriye işaret edebilen genel işaretçilerdir.<br/>
-`ft_memset()` fonksiyonu **kullanıcı tarafından istenilen** değerle doldurulurken `ft_bzero()` fonksiyonu **0** değeriyle doldurulur
+`ft_memset()` fonksiyonu **kullanıcı tarafından istenilen** değerle doldurulurken `ft_bzero()` fonksiyonu **0** değeriyle doldurulur.
 <br/><br/>
 `ft_memcpy()` ve `ft_memmove()` bellek bölgelerini kopyalamak için kullanılan fonksiyonlardır ancak aralarındaki temel fark, bellek alanlarının çakışması durumunda ortaya çıkar.<br>
 `ft_memcpy()`: İki void işaretçi alır ve belirtilen n uzunluğundaki veriyi kaynak işaretçiden hedef işaretçiye kopyalar. Ancak kaynak ve hedef işaretçilerin bellek alanları çakışırsa, veriler yanlış kopyalanabilir. Bu, kaynak verilerin daha kopyalama bitmeden değişmesine neden olabilir.
@@ -31,12 +31,12 @@ Proje dizinine gidin: `cd libft` <br/>
 `ft_strlcpy()`, `ft_memcpy()` gibi veri kopyalama işlevi görür, ancak yalnızca **\0** ile sonlanan  dizeler (string'ler) için kullanılır. Bu işlev, kaynak dizenin n kadar karakterini hedef dizgeye kopyalar ve her durumda hedef dizenin sonuna bir **\0** ekler.<br/>
 Farklı olarak, ft_strlcpy() işlevi, kopyalamanın başarılı olup olmamasına bakmaksızın kaynak dizenin toplam uzunluğunu döndürür. <br/>
 <br/><br/>
-`ft_strlcat()`, kaynak dizgeyi hedef dizgenin sonuna ekler, ancak toplam uzunluk belirtilen **dst_size** sınırını aşmaz. İşlem başarılı olup olmasa da, dönen değer, tam birleştirilmiş dizgenin uzunluğunu verir. Bu, hedefin kapasitesini ayarlamak için kullanışlıdır.<br/>
+`ft_strlcat()`, kaynak dizeyi hedef dizenin sonuna ekler, ancak toplam uzunluk belirtilen **dst_size** sınırını aşmaz. İşlem başarılı olup olmasa da dönen değer, tam birleştirilmiş dizgenin uzunluğunu verir. Bu, hedefin kapasitesini ayarlamak için kullanışlıdır.<br/>
 <br/><br/>
-`ft_strchr()` ve `ft_strrchr()` fonksiyonları, bir dizede belirtilen karakteri **(int olarak girilen bir karakter kodunu)** arar.
+`ft_strchr()` ve `ft_strrchr()` fonksiyonları, bir dizede belirtilen karakteri **(int olarak girilen bir karakter kodunu)** arar.<br/>
 `ft_strchr()`: Dizenin başından başlayarak karakteri arar ve ilk bulduğu yerdeki adresi döner.<br/>
 `ft_strrchr()`: Dizenin sonundan başlayarak karakteri arar ve son bulduğu (tersten ilk bulduğu) yerdeki adresi döner.<br/>
-Eğer karakter bulunamazsa, her iki işlev de `NULL` döner.<br/><br/>
+Eğer karakter bulunamazsa, her iki işlev de **NULL** döner.<br/><br/>
 <br/>
 `ft_strncmp()`, iki dize alır ve değerlerini belirtilen sayıda karaktere kadar karşılaştırır. Bir fark bulunursa, karşılaştığı ilk farklı karakterlerin tam sayı farkını döndürür. Hiçbir fark bulunmazsa, **0**döndürülür.<br/>
 <br/><br/>
