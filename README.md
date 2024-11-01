@@ -66,7 +66,7 @@ Buradaki fonksiyonlar standart C kütüphanesinde bulunmayan fonksiyonlardır.
 <br/><br/>
 `ft_strmapi()` ve `ft_striteri()` bir dize ve bir fonksiyona işaretçi alır. Hem ft_strmapi() hem de ft_striteri() geçirilen fonksiyonu geçirilen dizenin her karakterine ayrı ayrı uygular, ancak `ft_striteri()` dizeyi doğrudan değiştirirken `ft_strmapi()` sonuçla birlikte yeni tahsis edilmiş bir dize döndürür.<br/>
 <br/><br/>
-`ft_putchar_fd()` fonksiyonu karakter yazdırmaya; `ft_putstr_fd()` fonksiyonu *string* yazdırmaya ;`ft_putendl_fd()` fonksiyonu karakter ve yeni satur *newline* yazdırmaya;`ft_putnbr_fd()`fonksiyonu sayı yazdırır. Bir dosya tanımlayıcısı, sistemdeki bir dosyanın bellekteki adresini belirtir. <br/>
+`ft_putchar_fd()` fonksiyonu karakter yazdırmaya; `ft_putstr_fd()` fonksiyonu *string* yazdırmaya ;`ft_putendl_fd()` fonksiyonu karakter ve yeni satır *newline* yazdırmaya;`ft_putnbr_fd()`fonksiyonu sayı yazdırır. Bir dosya tanımlayıcısı, sistemdeki bir dosyanın bellekteki adresini belirtir. <br/>
 `0 -> Standart Input.
 1 -> Standart Output.
 2 -> Standart Error.` <br/><br/>
